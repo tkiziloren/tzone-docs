@@ -2,7 +2,7 @@
 title: "Tmux Short Tutorial"
 description: "Tmux cheatsheet. The most frequently used tmux commands."
 date: "2021-12-25"
-cover: "https://unsplash.it/400/300/?random?BigTest"
+cover: "/images/tmux-short-tutorial/cover.jpg"
 categories: 
     - Command Line Tools 
 slug: "awesome-nextjs-blog"
