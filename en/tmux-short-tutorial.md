@@ -17,7 +17,9 @@ metaPhrases:
 
 # What is tmux?
 
-**tmux** is a command line tool to run long running tasks on a remote machine via SSH. SSH connections can break while your long running command is still being run. Tmux is the perfect solution for that. Tmux creates a kind of server on the machine you are sshing into. You can create multiple tmux sessions on the server and you can connect again even if your ssh connection drops. 
+**tmux** is a command line tool to run long running tasks on a remote machine via ssh. It is a very useful tool because ssh sessions can disconnect while you your long running command is still being run. 
+
+Tmux is the perfect solution for that. Tmux creates a kind of server on the machine you are sshing into. You can create multiple tmux sessions on the server and you can connect again even if your ssh connection drops. 
 
 ## Most Often Used Tmux Commands
 
