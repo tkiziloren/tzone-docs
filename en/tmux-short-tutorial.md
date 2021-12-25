@@ -25,7 +25,7 @@ metaPhrases:
     ``` bash
     tmux ls
     ```
-    ![Tmux ls example output](../tzone-images/tmux-short-tutorial-1.png)
+    ![tmux ls example output](../tzone-images/tmux-short-tutorial/1.png)
 
 
 - ### Create A New Session Named **copy-files** and connect(attach) to it:
