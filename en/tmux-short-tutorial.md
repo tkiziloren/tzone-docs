@@ -1,6 +1,6 @@
 ---
 title: "Tmux Short Tutorial"
-description: "Tmux"
+description: "Tmux cheatsheet. The most frequently used tmux commands."
 date: "2021-12-25"
 cover: "https://unsplash.it/400/300/?random?BigTest"
 categories: 
@@ -25,7 +25,13 @@ metaPhrases:
     ``` bash
     tmux ls
     ```
-    ![tmux ls example output](../tzone-images/tmux-short-tutorial/1.png)
+
+    Example output:
+    ``` bash
+    ❯ tmux ls
+    build_job: 1 windows (created Sat Dec 25 15:47:12 2021)
+    copy_files: 1 windows (created Sat Dec 25 15:46:56 2021)
+    ```
 
 
 - ### Create A New Session Named **copy-files** and connect(attach) to it:
