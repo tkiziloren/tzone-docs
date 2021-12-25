@@ -1,11 +1,12 @@
 ---
-date: "2018-07-11"
 title: "Big Test"
+description: "This cheatsheet is specifically *Markdown Here's* version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a *Markdown Here* email, but it should be pretty close."
+date: "2016-07-11"
 cover: "https://unsplash.it/400/300/?random?BigTest"
 categories: 
     - Tech
     - Creative Thinking
-slug: "Big-Sample_Test"
+slug: "big-test"
 tags:
     - test
     - huge

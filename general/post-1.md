@@ -1,3 +1,19 @@
+---
+title: "Post1"
+description: "This blog post shows a few different types of content that are supported and styled with
+Material styles. Basic typography, images, and code are all supported.
+You can extend these by modifying `Markdown.js`."
+date: "2014-07-11"
+cover: "https://unsplash.it/400/300/?random?BigTest"
+categories: 
+    - Tech
+    - Creative Thinking
+slug: "post-1"
+tags:
+    - test
+    - huge
+---
+
 # Sample blog post
 
 #### April 1, 2020 by [Olivier](/)

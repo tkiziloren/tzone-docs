@@ -1,8 +1,16 @@
 ---
-title: 'Prism with Next.js'
-description: 'Example using Prism / Markdown with Next.js including switching syntax highlighting themes.'
+title: "Prism with Next.js"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+date: "2018-07-11"
+cover: "https://unsplash.it/400/300/?random?BigTest"
+categories: 
+    - Tech
+    - Creative Thinking
+slug: "prism-with-nextjs"
+tags:
+    - test
+    - huge
 ---
-
 # Using Prism with Next.js
 
 [**Prism**](https://prismjs.com/) is a popular syntax highlighter commonly used with Markdown.
