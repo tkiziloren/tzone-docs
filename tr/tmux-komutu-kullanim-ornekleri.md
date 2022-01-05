@@ -17,19 +17,20 @@ metaPhrases:
 ---
 
 # Tmux Nedir?
+**tmux** terminal multiplexer ifadesinin kısaltmasıdır. Bir komut satırı penceresi içinde birden fazla pencereyi veya tabı iç içe çalıştırmak için kullanılır.  
 
-**tmux** is a command line tool to run long running tasks on a remote machine via ssh. It is a very useful tool because ssh sessions can disconnect while you your long running command is still being run. 
+**tmux**'ın bir diğer kullanımı ise **ssh** uzerinden bağlanılan uzak bilgisayarlarda, çalıştırılması uzun süren komutları çalıştırmaktır. Unix tabanlı(Linux, Mac OSX, vb.) işletim sistemleri için tasarlanmıştır. **ssh** ile bağlandığınız bir makinede uzun bir komut çalıştırdıktan sonra sonucunu beklerken **ssh** bağlantınız kopabilir, bağlantınız koptuğu için çalıştırdığınız komut da işletim sistemi tarafından öldürülür. **tmux** bu gibi problemleri bertaraf etmenizi sağlayan çok faydalı bir araçtır.
 
-Tmux is the perfect solution for that. Tmux creates a kind of server on the machine you are sshing into. You can create multiple tmux sessions on the server and you can connect again even if your ssh connection drops. 
+**Tmux**, **ssh** bağlantısı yaptıgınız uzak bilgisayarda bir çeşit sunucu çalıştırır. Komutlarınız aslında bu sunucu tarafından sağlanan oturumlarda(session) yönetilir. Komutunuz calışmaya başlarken ssh bağlantınız kopsa bile bu oturumlar uzak bilgisayarda saklandığı için tekrar ssh bağlantısı kurup komutunuzun çalıştığı oturuma bağlanabilirsiniz.
 
-## Most Often Used Tmux Commands
+## En sık kullanılan Tmux komut parametreleri:
 
-- ### List available sessions:
+- ### Açık tmux oturumlarını listele:
     ``` bash
     tmux ls
     ```
 
-    Example output:
+    Örnek Çıktı: 
     ``` bash
     ❯ tmux ls
     build_job: 1 windows (created Sat Dec 25 15:47:12 2021)
@@ -37,29 +38,30 @@ Tmux is the perfect solution for that. Tmux creates a kind of server on the mach
     ```
 
 
-- ### Create A New Session Named **copy-files** and connect(attach) to it:
+- ### **copy-files** isimli yeni bir oturum oluştur ve bu oturuma bağlan(attach):
     ``` bash
     tmux new -s copy_files
     ```
 
-- ### Detach from an existing session: 
+- ### Bağlı oldugun herhangi oturumla bağlantıyı kes(Oturum arka tarafta calışmaya devam eder. Tekrar bağlanabilirsiniz): 
     <kbd>Ctrl</kbd> + <kbd>b</kbd> + <kbd>d</kbd>
 
-- ### Attach to an existing session with name **build-job**:
+- ### Daha önce açılmış bir **build-job** isimli bir oturuma bağlan:
     ``` bash
     tmux a -t build_job
     ```
 
-- ### Kill an existing session:
-    There are two ways for doing it
-    1) Type exit while you are inside the session you want to kill.
-    2) Run
+- ### Varolan bir oturumu öldür:
+    Bunu yapmak için iki yöntem vardır:
+    1) Eger oturumun içinde iseniz **exit** yazarak oturumu kapatabilirsiniz. 
+    2) Eger oturumun dışında iseniz aşağıdaki komut ile oturumun ismini yazarak oturumu sonlandırabilirsiniz.
         ``` bash
-        tmux kill-session -t session_name        
+        tmux kill-session -t oturum_adi        
         ```
  
- - ### Kill all sessions:
+ - ### Var olan tüm oturumları öldür:
     ``` bash
     tmux kill-session -a
     ```
+    Bu komuttan sonra tmux ls komutunu çalıştırdığınızda boş liste döner.
     
