@@ -1,0 +1,16 @@
+name: Trigger Deploy Tech Tutorial Zone
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test_commentary:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    # Runs a single command using the runners shell
+    - name: Webhook
+      uses: distributhor/workflow-webhook
+      with:
+        url: "https://api.vercel.com/v1/integrations/deploy/prj_Iahi4gpV3o0s0kq0jNjYAlq9PIeU/FdnkcRMotf"
+        json: ''
