@@ -5,7 +5,7 @@ date: "2021-12-25"
 cover: "/images/tmux-short-tutorial/cover.jpg"
 categories: 
     - Command Line Tools 
-slug: "awesome-nextjs-blog"
+slug: "tmux-short-tutorial"
 tags:
     - Linux
     - Quick

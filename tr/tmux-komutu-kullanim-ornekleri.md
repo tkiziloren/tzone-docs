@@ -63,5 +63,5 @@ metaPhrases:
     ``` bash
     tmux kill-session -a
     ```
-    Bu komuttan sonra tmux ls komutunu çalıştırdığınızda boş liste döner.
+    Bu komuttan sonra **tmux ls** komutunu çalıştırdığınızda boş liste döner.
     
